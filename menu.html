@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Menu - SCOTT'S URBAN BITES RESTAURANT</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #fffdf6;
+      color: #333;
+    }
+
+    header {
+      background-color: #1c1c1c;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #333;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #f39c12;
+    }
+
+    .menu-section {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                  url('images/menu-bg.jpg') center/cover no-repeat;
+      padding: 60px 20px;
+      color: white;
+    }
+
+    .menu-section h2 {
+      text-align: center;
+      font-size: 2.5em;
+      margin-bottom: 40px;
+      color: #f39c12;
+    }
+
+    .card-grid {
+      max-width: 1100px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+      color: #333;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card .info {
+      padding: 15px;
+    }
+
+    .card .info h3 {
+      margin: 0;
+      font-size: 1.2em;
+      color: #e67e22;
+    }
+
+    .card .info p {
+      margin-top: 8px;
+      font-size: 0.95em;
+    }
+
+    .price {
+      display: block;
+      margin-top: 10px;
+      color: #27ae60;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+
+    footer {
+      background-color: #1c1c1c;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>SCOTT'S URBAN BITES RESTAURANT</h1>
+    <p>Delicious meals made fresh every day</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="contact.html">Contact</a>
+    <a href="gallery.html">Gallery</a>
+  </nav>
+
+  <div class="menu-section">
+    <h2>Our Popular Menu</h2>
+    <div class="card-grid">
+
+      <div class="card">
+        <img src="images/pancakes.jpg" alt="American Pancakes">
+        <div class="info">
+          <h3>American Pancakes</h3>
+          <p>Fluffy, golden pancakes served with syrup.</p>
+          <span class="price">TSh 4,500</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="images/chicken-burger.jpg" alt="Chicken Burger">
+        <div class="info">
+          <h3>Chicken Burger</h3>
+          <p>Crispy chicken fillet in a toasted bun with toppings.</p>
+          <span class="price">TSh 6,000</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="images/beef-burger.jpg" alt="Beef Burger">
+        <div class="info">
+          <h3>Beef Burger</h3>
+          <p>Juicy grilled beef burger with cheese and lettuce.</p>
+          <span class="price">TSh 6,500</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="images/chicken-pizza.jpg" alt="Chicken Pizza">
+        <div class="info">
+          <h3>Chicken Pizza</h3>
+          <p>Pizza topped with chicken, cheese, and herbs.</p>
+          <span class="price">TSh 8,000</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="images/french-toast.jpg" alt="French Toast">
+        <div class="info">
+          <h3>French Toast</h3>
+          <p>Sweet bread dipped in egg, grilled golden brown.</p>
+          <span class="price">TSh 3,000</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="images/waffles.jpg" alt="Fluffy Waffles">
+        <div class="info">
+          <h3>Fluffy Waffles</h3>
+          <p>Belgian-style waffles with honey or chocolate.</p>
+          <span class="price">TSh 4,000</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="images/milkshakes.jpg" alt="Milkshakes & Cones">
+        <div class="info">
+          <h3>Milkshakes & Cones</h3>
+          <p>Classic milkshakes and soft-serve cones.</p>
+          <span class="price">TSh 2,500</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="images/juices.jpg" alt="Chilled Juices">
+        <div class="info">
+          <h3>Chilled Juices</h3>
+          <p>Refreshing tropical fruit juices, served cold.</p>
+          <span class="price">TSh 2,000</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="images/hazelnut-frappe.jpg" alt="Hazelnut Frappe">
+        <div class="info">
+          <h3>Hazelnut Frappe</h3>
+          <p>Blended iced coffee with hazelnut and cream.</p>
+          <span class="price">TSh 3,500</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="images/chocolate-milkshake.jpg" alt="Chocolate Milkshake">
+        <div class="info">
+          <h3>Chocolate Milkshake</h3>
+          <p>Rich chocolate shake topped with whipped cream.</p>
+          <span class="price">TSh 3,000</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="images/mocktails.jpg" alt="Mocktails">
+        <div class="info">
+          <h3>Mocktails</h3>
+          <p>Fruity non-alcoholic blends served chilled.</p>
+          <span class="price">TSh 3,800</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    © 2025 SCOTT'S URBAN BITES RESTAURANT – Mwanza, Tanzania
+  </footer>
+
+</body>
+</html>
